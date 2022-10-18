@@ -1,0 +1,60 @@
+{
+  "name": "sircqq-blog-api",
+  "version": "1.0.0",
+  "description": "This is the api for SirCQQ's Blog",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc",
+    "format": "prettier --config .prettierrc.json --write src/**/*.ts",
+    "lint": "eslint",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "api",
+    "typescript",
+    "express"
+  ],
+  "author": "SirCQQ",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "husky": "^8.0.1",
+    "jest": "^29.2.0",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
+    "pino-http": "^8.2.1",
+    "pino-pretty": "^9.1.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  }
+}
